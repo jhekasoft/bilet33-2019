@@ -21,17 +21,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <style>
         body {
-            font-family: 'Caveat', cursive;
-            background: #333;
-            color: #fff;
-            font-size: 18px;
+          font-family: 'Caveat', cursive;
+          background: #333;
+          color: #fff;
+          font-size: 18px;
         }
         a {
-            color: #aaf;
-            text-decoration: none;
+          color: #aaf;
+          text-decoration: none;
+          transition: text-shadow .3s;
         }
         a:hover, a:focus {
-            text-decoration: underline;
+          text-decoration: underline;
+          outline: none;
+        }
+        a:hover, a:focus {
+          text-shadow: 0 0 8px rgba(255,255,255,.5);
+          text-decoration: none;
         }
         h1 {
           font-weight: normal;
@@ -46,9 +52,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .bage-item {
           margin-bottom: 20px;
         }
-        /* .bage-music-services a {
-          vertical-align: middle;
-        } */
         .music-service-badge {
           display: inline-block;
           width: 158px;
@@ -57,6 +60,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           border: 1px solid #999;
           border-radius: 10px;
           text-align: center;
+          transition: box-shadow .3s;
+        }
+        .music-service-badge:hover, .music-service-badge:focus {
+          box-shadow: 0 0 20px rgba(255,255,255,.5);
+          outline: none;
         }
         .music-service-badge img {
           vertical-align: middle;
@@ -65,6 +73,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .icn {
           font-size: 2.4rem;
           margin: 0 4px;
+          transition: text-shadow .3s;
+        }
+        .icn:hover, .icn:focus {
+          text-shadow: 0 0 8px rgba(255,255,255,.5);
+          outline: none;
         }
         .icn-youtube {
           color: #E93F33;
