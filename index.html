@@ -46,8 +46,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .bage-item {
           margin-bottom: 20px;
         }
-        .bage-music-services a {
+        /* .bage-music-services a {
           vertical-align: middle;
+        } */
+        .music-service-badge {
+          display: inline-block;
+          width: 158px;
+          height: 58px;
+          background-color: #000;
+          border: 1px solid #999;
+          border-radius: 10px;
+          text-align: center;
+        }
+        .music-service-badge img {
+          vertical-align: middle;
+          max-width: 140px;
         }
         .icn {
           font-size: 2.4rem;
@@ -95,9 +108,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="bage-item bage-music-services">
-        <a href="https://music.apple.com/ua/artist/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82-33/1130917092" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-10-11&kind=album&bubble=apple_music) no-repeat;width:158px;height:45px;"></a>
-        <a href="https://play.google.com/store/music/artist?id=Aiwkeejdkokrlrsdvwocwnkr4ju" target="_blank"><img alt='Listen on Google Play Music' src='https://play.google.com/intl/en_us/badges/static/images/badges-music/en_badge_web_music.png' style="width: 158px;"/></a>
-        <a href="https://music.youtube.com/channel/UCWuRzz-hAci8iIYIr90bdJg" target="_blank"><img alt='Listen on YouTube Music' src='youtube_music_badge.png' style="width: 158px;"/></a>
+        <a class="music-service-badge" href="https://music.apple.com/ua/artist/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82-33/1130917092" target="_blank">
+          <img alt='Listen on Apple Music' src="badge-applemusic.png" />
+        </a>
+        <a class="music-service-badge" href="https://music.youtube.com/channel/UCWuRzz-hAci8iIYIr90bdJg" target="_blank">
+          <img alt='Listen on Google Play Music' src="badge-playmusic.png" />
+        </a>
+        <a class="music-service-badge" href="https://music.youtube.com/channel/UCWuRzz-hAci8iIYIr90bdJg" target="_blank">
+          <img alt='Listen on YouTube Music' src="badge-youtubemusic.png" />
+        </a>
       </div>
 
       <div class="bage-item">
